@@ -1,0 +1,284 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    	<meta charset="iso-8859-1" />
+	    <meta name="description" content="Salud Ocupacional" />
+    	<meta name="keywords" content="=HTML5, CSS3, Javascript" />
+    	<title>ANAMNESIS DE HC</title>
+	    <link rel="stylesheet" href="misestilos.css"/>
+</head>
+        <body>
+        
+	    <header id="cabecera">
+        
+		      <h1>EXAMEN MÉDICO LABORAL</h1>          
+</head>
+
+		<nav id="menuppal1">
+		<figure>
+ 
+      <img src="imagenes/abrir.png" alt="abrir historia" width="50" 		height="50">
+    	<figcaption>
+      Abrir Historia
+</figcaption>  
+</figure>
+   		<figure>
+      <img src="imagenes/guardar.png" alt="guardar cambios" width="50" height="50">
+     	<figcaption>
+      Guardar Cambios
+</figcaption>
+</figure>
+    	<figure>    
+      <img src="imagenes/buscar.png" alt="buscar historia" width="50" height="50">
+     	<figcaption>
+    	 Buscar Historias 
+</figcaption>
+</figure>
+
+		<figure>
+ 
+      <img src="imagenes/inicial.png" alt="Ingreso Paciente" width="50" height="50">
+    	<figcaption>
+      Ingreso Paciente
+</figcaption>  
+</figure>
+
+   		 <figure>
+       <img src="imagenes/examen.png" alt="Examen médico" width="50" height="50">
+      <figcaption>
+      Examen Médico
+</figcaption>
+</figure>
+      <figure>
+   
+       <img src="imagenes/laboratorios.png" alt="laboratorios" width="50" height="50">
+     	<figcaption>
+      Ingreso de Resultados 
+</figcaption>
+</figure>
+     <figure>
+    
+      <img src="imagenes/cerrar.png" alt="cerrar sesion" width="50" height="50">
+     <figcaption>
+     Cerrar Sesión
+ </figcaption>
+</figure>
+      </nav>
+   
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+      <nav id="menuppal">
+    	<ul>
+    		<li>ANEMNESIS DE HC</li>   		
+     	 </ul>
+         </nav>
+      <hr style="border:30px;"><hr style="border:4px;">
+      <hr style="width:100%;"> 
+      <hr style="border-color:#F7F8D3;">   
+    
+     
+ <section id="seccion">    
+ <form name="miformulario" id="miformulario" method="get" autocomplete="off"> <!--/*si lo pongo en on me muestra el formulario autoconpletar*/-->
+Empresa: &nbsp;<input type="text" name="Empresa" id="Empresa" placeholder="Nombre Empresa" required autofocus>
+Actividad Económica &nbsp;<input type="text" name="Actividad Económica" id="Actividad Económica" placeholder="Actividad Económica">
+<br><br>
+Nombre Completo: &nbsp;<input type="text" name="Nombre" id="Nombre" placeholder="Nombre Completo" required autofocus>
+Numero de Documento: &nbsp;<input type="number" name="Documento" id="Documento" placeholder="Numero de Documento" required>
+Estado Civil: &nbsp;<input type="text" name="Estado Civil" id="Estado Civil" placeholder="Estado Civil" required list="opc">
+
+<datalist id="opc">
+<option value="Soltero" label= "Soltero">
+<option value="Casado" label= "Casado">
+<option value="Divorsiado" label= "Divorsiado">
+<option value="Viudo" label= "Viudo">
+
+</datalist><br><br>
+
+<!--Buscar-. &nbsp;<input type="search" name="buscar" id="buscar">-->   <!--casilla para buscar-->
+Fecha de Nacimiento: &nbsp;<input type="date" name="fecha" id="fecha" placeholder="Fecha de Nacimiento" required>
+Edad: &nbsp;<input type="number" name="Edad" id="Edad" min="1" max="100" placeholder="Edad" required>
+No Hijos VIvos: &nbsp;<input type="number" name="No Hijos VIvos" id="No Hijos VIvos" min="1" max="100" placeholder="No Hijos VIvos" required><br><br>
+Lugar de Nacimiento: &nbsp;<input type="text" name="Lugar de Nacimiento" id="Lugar de Nacimiento" placeholder="Lugar de Nacimiento">
+Dirección de Residencia: &nbsp;<input type="text" name="Dirección de Residencia" id="Dirección de Residencia" placeholder="Dirección de Residencia">
+Municipio: &nbsp;<input type="text" name="Municipio" id="Municipio" placeholder="Municipio">
+Email:&nbsp;<input type="email" name="Email" id="Email" placeholder="Email" required  multiple><br><br>   <!--multiple permite agregar varios email y requiered es para que el campo la informacion sea obligatoria-->
+Número Celular: &nbsp;<input type="tel" name="Telefono" id="Telefono" placeholder="Número Celular" required><br><br>
+Ocupación: &nbsp;<input type="text" name="Ocupación" id="Ocupación" placeholder="Ocupación">
+Género: &nbsp;<input type="text" name="Género" id="Género" placeholder="Género" required list="opc2">
+<datalist id="opc2">
+<option value="Hombre" label= "Hombre">
+<option value="Mujer" label= "Mujer">
+<option value="Transgenero" label= "Transgenero">
+</datalist>
+<br><br>
+<!--Grupo de Sanguíneo: &nbsp;<input type="text" name="Grupo de Sanguíneo" id="Grupo de Sanguíneo" placeholder="Grupo Sanguíneo">-->
+Escolaridad: &nbsp;<input type="text" name="Escoralidad" id="Escoralidad" placeholder="Escolaridad" required list="opc3"><br><br>
+<datalist id="opc3">
+<option value="Analfabeta" label= "Analfabeta">
+<option value="Primaria Completa" label= "Primaria Completa">
+<option value="Primaria Incompleta" label= "Primaria Incompleta">
+<option value="Secuandaria Completa" label= "Secuandaria Completa">
+<option value="Secuandaria Incompleta" label= "Secuandaria Incompleta">
+<option value="Técnica Completa" label= "Técnica Completa">
+<option value="Técnica Incompleta" label= "Técnica Incompleta">
+<option value="Tecnológico Completo" label= "Tecnológico Completo">
+<option value="Tecnológico Incompleto" label= "Tecnológico Incompleto">
+<option value="Universitaria Completa" label= "Universitaria Completa">
+<option value="Universitaria Incompleta" label= "Universitaria Incompleta">
+<option value="Estudios de Posgrado" label= "Estudios de Posgrado">
+</datalist>
+ARL: &nbsp;<input type="text" name="ARL" id="ARL" placeholder="ARL" required list="opc4">
+<datalist id="opc4">
+<option value="NO SABE" label= "NO SABE">
+<option value="NO TIENE" label= "NO TIENE">
+<option value="AXA Colpatria" label= "AXA Colpatria">
+<option value="Bolivar" label= "Bolivar">
+<option value="Colmena" label= "Colmena">
+<option value="Positiva" label= "Positiva">
+<option value="Sura" label= "Sura">
+<option value="Alfa" label= "Alfa">
+<option value="Aurora" label= "Aurora">
+<option value="La Previsora" label= "La Previsora">
+<option value="La Equidad" label= "La Equidad">
+<option value="Liberty" label= "Liberty">
+<option value="Mapfre" label= "Mapfre">
+<option value="Royal" label= "Royal">
+</datalist>
+EPS: &nbsp;<input type="text" name="EPS" id="EPS" placeholder="EPS" required list="opc5">
+<datalist id="opc5">
+<option value="NO SABE" label= "NO SABE">
+<option value="NO TIENE" label= "NO TIENE">
+<option value="REGIMEN ESPECIAL" label= "REGIMEN ESPECIAL">
+<option value="Aliansalud" label= "Aliansalud">
+<option value="Comparta" label= "Comparta">
+<option value="Compensar" label= "Compensar">
+<option value="Coomeva" label= "Coomeva">
+<option value="Cruz Blanca" label= "Cruz Blanca">
+<option value="Medimás" label= "Medimás">
+<option value="Nueva EPS" label= "Nueva EPS">
+<option value="Salud Total" label= "Salud Total">
+<option value="Sanitas" label= "Sanitas">
+<option value="Savia Salud" label= "Savia Salud">
+<option value="Sura" label= "Sura">
+<option value="LISTADO COMPLETO" label= "LISTADO COMPLETO">
+<option value="Asmet Salud" label= "Asmet Salud">
+<option value="Aliansalud" label= "Aliansalud">
+<option value="Anas Wayuu EPS Indígena" label= "Anas Wayuu EPS Indígena">
+<option value="Asocianción Indígena del Cauca" label= "Asocianción Indígena del Cauca">
+<option value="Asocianción Mutual" label= "Asocianción Mutual">
+<option value="Capital Salud" label= "Capital Salud">
+<option value="Capresoca E.P.S" label= "Capresoca E.P.S">
+<option value="CCF Cajacopi Atlántico" label= "CCF Cajacopi Atlántico">
+<option value="CCF de la Guajira" label= "CCF de la Guajira">
+<option value="CCF de Nariño" label= "CCF de Nariño">
+<option value="Camfaboy" label= "Camfaboy">
+<option value="Comfacor" label= "Comfacor">
+<option value="Comfacundi" label= "Comfacundi">
+<option value="Comfamiliar Cartagena" label= "Comfamiliar Cartagena">
+<option value="Comfamiliar Choco" label= "Comfamiliar Choco">
+<option value="Comfamiliar Huila" label= "Comfamiliar Huila">
+<option value="Comfaoriente" label= "Comfaoriente">
+<option value="Comfasucre" label= "Comfasucre">
+<option value="Comfenalco Valle" label= "Comfenalco Valle">
+<option value="Comparta" label= "Comparta">
+<option value="Compensar" label= "Compensar">
+<option value="Convida" label= "Convida">
+<option value="Coomeva" label= "Coomeva">
+<option value="Coosalud" label= "Coosalud">
+<option value="Cruz Blanca" label= "Cruz Blanca">
+<option value="Dusakawi EPS Indígena" label= "Dusakawi EPS Indígena">
+<option value="Ecoopsos" label= "Ecoopsos">
+<option value="Emdisalud" label= "Emdisalud">
+<option value="Emssanar" label= "Emssanar">
+<option value="EPM Servicio Médico" label= "EPM Servicio Médico">
+<option value="Esalud EPS" label= "Esalud EPS">
+<option value="Famisanar" label= "Famisanar">
+<option value="Fundación Médico Preventiva FMP" label= "Fundación Médico Preventiva FMP">
+<option value="Golden Group" label= "Golden Group">
+<option value="Humana Vivir" label= "Humana Vivir">
+<option value="Mallamas" label= "Mallamas">
+<option value="Manexka" label= "Manexka">
+<option value="Medimás" label= "Medimás">
+<option value="Nueva EPS" label= "Nueva EPS">
+<option value="Pijaos Salud EPS Indígena" label= "Pijaos Salud EPS Indígena">
+<option value="Red Vital" label= "Red Vital">
+<option value="Régimen Subsidiado" label= "Régimen Subsidiado">
+<option value="Salud Colpatria" label= "Salud Colpatria">
+<option value="Salud Total" label= "Salud Total">
+<option value="Saludvida" label= "Saludvida">
+<option value="Sanitas" label= "Sanitas">
+<option value="Savia Salud" label= "Savia Salud">
+<option value="Servicio Occidental de Salud SOS" label= "Servicio Occidental de Salud SOS">
+<option value="Servisalud" label= "Servisalud">
+<option value="Solsalud" label= "Solsalud">
+<option value="Sura" label= "Sura">
+</datalist>
+
+AFP: &nbsp;<input type="text" name="AFP" id="AFP" placeholder="AFP" required list="opc6"><br><br>
+<datalist id="opc6">
+<option value="NO SABE" label= "NO SABE">
+<option value="NO TIENE" label= "NO TIENE">
+<option value="REGIMEN ESPECIAL" label= "REGIMEN ESPECIAL">
+<option value="Colfondos" label= "Colfondos">
+<option value="Protección" label= "Protección">
+<option value="Colpensiones" label= "Colpensiones">
+<option value="Porvenir" label= "Porvenir">
+<option value="Cajanal" label= "Cajanal">
+<option value="Caxdac" label= "Caxdac">
+<option value="Caprecom" label= "Caprecom">
+<option value="Colpatria" label= "Colpatria">
+<option value="Colfondos" label= "Colfondos">
+<option value="Fonprecon" label= "Fonprecon">
+<option value="Pensiones de Antioquia" label= "Pensiones de Antioquia">
+</datalist>
+<br><br>
+  <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+
+
+
+Comentarios: &nbsp;<input type="text" name="comentario" id="comentario" placeholder="Comentario" required form="miformulario" size="40"> <!--este form="miformulario hace que se valide por fuera del primer form que se abres y se cierra-->
+<input type="submit" value="Registrar">
+
+</form>          
+</section>   
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+ 
+   
+     <hr style="border:30px;"><hr style="border:4px;">
+      <hr style="width:100%;"> 
+      <hr style="border-color:#F7F8D3;">   
+      
+      <br>
+     <br>
+     <br>
+     <br>
+     <br>
+     <br>
+        
+	<footer>
+  	<p>Derechos reservados &copy; Sisao 2019 </p>
+</footer>
+  
+</body>
+</html>
