@@ -4,7 +4,7 @@
     	<meta charset="iso-8859-1" />
 	    <meta name="description" content="Salud Ocupacional" />
     	<meta name="keywords" content="=HTML5, CSS3, Javascript" />
-    	<title>Historia Clinica Inicial Pag 3</title>
+    	<title>Examen Fisico General</title>
 	    <link rel="stylesheet" href="misestilos.css"/>
 </head>
         <body>
@@ -89,42 +89,82 @@
 
    <nav id="menuppal">
     	<ul>
-    		<li>EXAMEN FISICO</li>   		
+    		<li>EXAMEN FISICO GENERAL (N=Normal, A=Anormal)</li>   		
      	 </ul>
          </nav>
 
 <br> 
+<br>
+<br>
 <fieldset>  
- <legend>Signos Vitales</legend>
- </fieldset>
-<br>
-<br>
-<section id="seccion">    
- 
-Fc: &nbsp;<input type="text" name="miformulario" id="signos">
+ Apariencia: &nbsp;<input type="text" name="AP" id="AP" placeholder="" required list="opc1">
+    <datalist id="opc1">
+    <option value="Asténico" label= "Asténico">
+    <option value="Atlético" label= "Atlético">
+    <option value="Delgado" label= "Delgado">
+    <option value="Enfermo" label= "Enfermo">
+    <option value="Obeso" label= "Obeso">
+    <option value="Robusto" label= "Robusto">
+    <option value="Sano" label= "Sano">
+    </datalist><br><br>
+<p>Ingrese Altura (m): <input type="text" id="m"></p><br>
+<p>Ingrese peso (kg): <input type="text" id="kg"></p><br><br>
 
-Fr: &nbsp;<input type="text" name="miformulario" id="signos">
- 
-Ta: &nbsp;<input type="text" name="miformulario" id="signos">
+<button id="calc">Calcular</button><br>
+<p>IMC: <span id="imc"></span></p>
+<p>Lectura: <span id="lectura"></span></p>
 
-T° : &nbsp;<input type="text" name="miformulario" id="signos">
- 
-Peso: &nbsp;<input type="text" name="miformulario" id="signos"><br><br>
+<!-- SCRIPT PARA CALCULAR IMC -->
+<script type="text/javascript">
+    calc = document.getElementById("calc");
+    kg = document.getElementById("kg");
+    m = document.getElementById("m");
+    imc = document.getElementById("imc");
+    lectura = document.getElementById("lectura");
 
-Talla : &nbsp;<input type="num" name="miformulario" id="signos">
+    calc.onclick = function(){
+        if(kg.value!="" && m.value!=""){
+            imcx = (kg.value / (m.value* m.value));
+            imc.innerHTML = imcx
+            console.log(imcx);
 
-Imc: &nbsp;<input type="text" name="miformulario" id="signos">
+            if(imcx<18.5){ lectura.innerHTML = "Peso inferior al normal"; }
+            else if(imcx>=18.5 && imcx<=24.9){ lectura.innerHTML = "Peso normal"; }
+            else if(imcx>=25 && imcx<=29.9){ lectura.innerHTML = "Peso superior al normal"; }
+            else if(imcx>30){ lectura.innerHTML = "Obesidad"; }
 
-Perf. Abdominal: &nbsp;<input type="text" name="miformulario" id="signos"><br>
-  <input type="submit" value="Registrar">
-</section>
+        }else{
+            alert("Debes ingresar peso y altura.")
+        }
+
+    };
+</script><br><br>
+Presión Arterial: &nbsp;<input type="text" name="PresionArte" id="PresionArte" placeholder="ej.110/60" required>
+Pulso: &nbsp;<input type="text" name="Pul" id="Pul" placeholder="Digite" required>
+Respiración: &nbsp;<input type="text" name="Res" id="Res" placeholder="Digite" required>
+Dominancia: &nbsp;<input type="text" name="DOM" id="DOM" placeholder="" required list="opc2">
+    <datalist id="opc2">
+    <option value="Zurdo" label= "Zurdo">
+    <option value="Atlético" label= "Atlético">
+    <option value="Ambidiestro" label= "Ambidiestro">
+    </datalist><br><br> 
+Périmetro del Campo: &nbsp;<input type="text" name="Peric" id="Peric" placeholder="Digite" required>
+Complexión: &nbsp;<input type="text" name="COMP" id="COMP" placeholder="" required list="opc3">
+    <datalist id="opc3">
+    <option value="Pequeña F: >11     M: >10.4" label= "Pequeña F: >11     M: >10.4">
+    <option value="Mediana F: 10.1-11   M: 9.6-10.4 (entre)" label= "Mediana F: 10.1-11   M: 9.6-10.4 (entre)">
+    <option value="Grande F: <10.1    M: <9.6" label= "Grande F: <10.1    M: <9.6">
+    </datalist>
+Périmetro Cadera: &nbsp;<input type="text" name="Pericad" id="Pericad" placeholder="Digite" required>
+Périmetro Cintura: &nbsp;<input type="text" name="Pericint" id="Pericint" placeholder="Digite" required>
+
 
   <hr style="border:30px;"><hr style="border:4px;">
 <hr style="width:100%;"> 
 <hr style="border-color:#F7F8D3;"> 
 <br>
 
-
+</fieldset>
 
 
 
